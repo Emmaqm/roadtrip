@@ -1,17 +1,10 @@
 <?php
 
-$DB_host = getenv('HOST');
-$DB_user = getenv('USER');
-$DB_pass = getenv('PASS');
-$DB_name = getenv('DB');
-$DB_port = getenv('PORT');
-
-
-echo $DB_host;
-echo $DB_user;
-echo $DB_pass;
-echo $DB_name;
-echo $DB_port;
+$DB_host = getenv('RT_HOST');
+$DB_user = getenv('RT_USER');
+$DB_pass = getenv('RT_PASS');
+$DB_name = getenv('RT_DB');
+$DB_port = getenv('RT_PORT');
 
 try
 {
