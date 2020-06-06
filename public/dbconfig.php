@@ -1,16 +1,17 @@
 <?php
 
-require('../vendor/autoload.php');
-
-// $dotenv = Dotenv\Dotenv::createImmutable('../');
-// $dotenv->load();
-
 $DB_host = getenv('HOST');
 $DB_user = getenv('USER');
 $DB_pass = getenv('PASS');
 $DB_name = getenv('DB');
 $DB_port = getenv('PORT');
 
+
+echo $DB_host;
+echo $DB_user;
+echo $DB_pass;
+echo $DB_name;
+echo $DB_port;
 
 try
 {
