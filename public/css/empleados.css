@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+}
+
+.sidenav {
+    box-shadow: 1px 0 10px -3px #888;
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    background-color: #eaf2ff;
+}
+
+.sidenav li a {
+    font-size: 18px;
+    display: block;
+    color: #5b5b5b;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+.sidenav li a:hover{
+    background-color: #103f6ee3;
+    color: white;
+}
+
+.content{
+    float: right;
+    width: 70%;
+    padding:1px 16px;
+    height: 1000px;
+    max-height: 1000px;
+    overflow: scroll;
+}
+
+.content h2{
+    margin-bottom: 50px;
+}
+
+.footer{
+    margin-top:0;
+}
+
+.wrapper{
+    height: 1000px;
+}
+
+
+#agregarViaje, #modificarViaje, #cancelarViaje{
+    display:none;
+}
+
+#pagarR{
+    background-color: #103f6ee3;;
+    color: white;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+}
+
+td{
+    padding:17px 40px 14px 40px;
+    color: black;
+}
+
+th{
+    padding:15px 35px;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.fila{
+    background-color: #244f7b0f;
+}
+
+.titleColumn{
+    background-color: #0091f2;
+    color: white;
+}
+
+.tableHeader{
+    padding: 26px;
+    font-size: 20px;
+    background-color: #103f6ee8;
+    color: white;
+}
+@-moz-keyframes 
+dothabottomcheck {  0% {
+ height: 0;
+}
+ 100% {
+ height: 12px;
+}
+}
+@-webkit-keyframes 
+dothabottomcheck {  0% {
+ height: 0;
+}
+ 100% {
+ height: 12px;
+}
+}
+@keyframes 
+dothabottomcheck {  0% {
+ height: 0;
+}
+ 100% {
+ height: 12px;
+}
+}
+@keyframes 
+dothatopcheck {  0% {
+ height: 0;
+}
+ 50% {
+ height: 0;
+}
+ 100% {
+ height: 24px;
+}
+}
+@-webkit-keyframes 
+dothatopcheck {  0% {
+ height: 0;
+}
+ 50% {
+ height: 0;
+}
+ 100% {
+ height: 24px;
+}
+}
+@-moz-keyframes 
+dothatopcheck {  0% {
+ height: 0;
+}
+ 50% {
+ height: 0;
+}
+ 100% {
+ height: 24px;
+}
+}
+
+input[type=radio] { display: none; }
+
+.check-box {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: 3px solid #5b5b5b;
+  position: relative;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: border-color ease 0.2s;
+  -o-transition: border-color ease 0.2s;
+  -webkit-transition: border-color ease 0.2s;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+}
+
+.check-box::before,
+.check-box::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  height: 0;
+  width: 3px;
+  background-color: #00a1f5;
+  display: inline-block;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  content: ' ';
+  -webkit-transition: opacity ease .5;
+  -moz-transition: opacity ease .5;
+  transition: opacity ease .5;
+  border-radius: 1px;   
+}
+
+.check-box::before {
+  top: 28px;
+  left: 15px;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-140deg);
+}
+
+.check-box::after {
+  top: 18px;
+  left: 5px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type=radio]:checked + .check-box,
+.check-box.checked { border-color: #00a1f5; }
+
+input[type=radio]:checked + .check-box::after,
+.check-box.checked::after {
+  height: 12px;
+  -moz-animation: dothabottomcheck 0.2s ease 0s forwards;
+  -o-animation: dothabottomcheck 0.2s ease 0s forwards;
+  -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+  animation: dothabottomcheck 0.2s ease 0s forwards;
+}
+
+input[type=radio]:checked + .check-box::before,
+.check-box.checked::before {
+  height: 24px;
+  -moz-animation: dothatopcheck 0.4s ease 0s forwards;
+  -o-animation: dothatopcheck 0.4s ease 0s forwards;
+  -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+  animation: dothatopcheck 0.4s ease 0s forwards;
+}
+
+.siguiente{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 42px;
+    background-color: #00a1f5;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin-left: 8px;
+    float: right;
+    margin-top: 10px;
+}
+
+.siguiente:hover{
+    padding: 8px 40px;
+    color: #00a1f5;
+    border: 2px solid #00a1f5;
+    background-color: transparent;
+}
+
+.siguiente span{
+    padding-left: 10px;
+}
+
+
+.select-viaje{
+    width: 100%;
+}
+
+.origen{
+    display: inline-block;
+    margin-right: 10px
+}
+
+.destino{
+    display: inline-block;
+    margin-left: 10px
+}
+
+.select{
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    margin:20px 0 5px 10px;
+    padding: 12px 15px;
+    border-radius: 40px;
+    text-align: left;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+}
+
+.arrow, .fa-times{
+    float: right;
+    margin-top:5px;
+    margin-right: 8px;
+}
+
+.origen hr, .destino hr{
+    margin:0;
+    border: none;
+    border-bottom:1px solid #d1d1d1;
+}
+
+.origen ul, .destino ul{
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    background-color: white;
+    z-index: 10;
+    visibility: hidden;
+    position: absolute;
+    margin: 0 auto; 
+    width: 235px;
+    border-radius: 10px;
+    text-align: left;
+    height: 200px;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.origen ul li, .destino ul li{
+    padding: 13px 0;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.origen ul li:hover, .destino ul li:hover{
+    background-color:#ebebeb;
+}
+
+.weekdays{
+    border-spacing: 7px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.notSelected{
+    color:#5b5b5b !important;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #d4d4d4;
+    padding: 13px 17px;   
+}
+
+.selected{
+    color:#5b5b5b !important;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #00a1f5;
+    padding: 13px 17px;   
+}
+
+.weekdays td:hover{
+    border: 2px solid #00a1f5;
+}
+
+.combo{
+    margin-left: 40px;
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    border-radius: 40px;
+    outline: none;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top:20px;
+    padding: 14px 18px;
+    color: #767676;
+    border: none;
+    cursor: pointer;
+}
+
+#salidaL, #llegadaL, #precioL{
+    position: absolute;
+    margin:0;
+    margin-left: 55px;
+}
+
+#salida, #llegada, #precio{
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 18%;
+}
+
+#fechaI{
+    width: 30%;
+}
+
+.inputss{
+    margin-top: 60px;
+}
+
+div .hello-week{
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 2px;
+    width: 346px;
+}
+
+div .hello-week__header{
+    padding: 6px 15px;
+}
+div .hello-week__label{
+    font-size: 20px;
+}
+
+div .hello-week__week__day{
+    font-size: 15px;
+    padding: 8px;
+    color: #103f6e;
+}
+
+div .hello-week__day{
+    font-size: 15px;
+    padding: 10px;
+}
+
+div .hello-week__next, div .hello-week__prev{
+    cursor: pointer;
+} 
+
+.modificar{
+    width:30% !important; 
+}
