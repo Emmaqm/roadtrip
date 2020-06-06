@@ -10,3 +10,15 @@ Roadtrip fue mi primer proyecto realizado en PHP. Roadtrip es un sistema para re
 Para acceder al demo ingresar a:
 [Demo - Roadtrip](https://roadtriptest.herokuapp.com/)
 
+## Usuarios
+
+Usuario cliente:
+```
+cliente@cliente.com
+clientesistema
+```
+Usuario empleado:
+```
+empleado@empleado.com
+empleado
+```
