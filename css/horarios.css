@@ -1,0 +1,121 @@
+.select-viaje{
+    width: 725px;
+    margin: 0 auto;
+}
+
+.origen{
+    margin-top:50px;
+    display: inline-block;
+    margin-right: 10px
+}
+
+.destino{
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 10px
+}
+
+.select{
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    margin:20px 0 5px 0;
+    padding: 12px 15px;
+    border-radius: 40px;
+    text-align: left;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+    width: 350px;
+    display: inline-block;
+}
+
+.arrow, .fa-times{
+    float: right;
+    margin-top:5px;
+    margin-right: 8px;
+}
+
+.origen hr, .destino hr{
+    margin:0;
+    border: none;
+    border-bottom:1px solid #d1d1d1;
+}
+
+.origen ul, .destino ul{
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    background-color: white;
+    z-index: 10;
+    visibility: hidden;
+    position: absolute;
+    margin: 0 auto; 
+    width: 350px;
+    border-radius: 10px;
+    text-align: left;
+    height: 200px;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding: 0;
+}
+
+.origen ul li, .destino ul li{
+    padding: 13px 0;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.origen ul li:hover, .destino ul li:hover{
+    background-color:#ebebeb;
+}
+
+
+.weekdays{
+    border-spacing: 7px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.weekdays td{
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #d4d4d4;
+    padding: 13px 17px;   
+}
+
+.weekdays td:hover{
+    border: 2px solid #00a1f5;
+}
+
+.horario-viaje{
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.horario-viaje td{
+    border-bottom: 3px solid white;
+    padding:17px 60px 14px 60px;
+    color: black;
+}
+
+.horario-viaje th{
+    padding:15px 60px;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.horario-viaje .fila{
+    background-color: #dfecff;
+}
+
+.horario-viaje .titleColumn{
+    background-color: #0091f2;
+    color: white;
+}
+
+.space{
+    height: 200px;
+}
+
+.footer{
+    margin-top: 40px !important;
+}
